@@ -1,0 +1,82 @@
+body {
+    background-color: #fafafa;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 800px;
+    margin: 0% auto;
+    padding-top: 2rem;
+    display: flex;
+}
+
+.gambar {
+    width: 50%;
+}
+
+.main-img {
+    width: 100%;
+}
+
+.box {
+    width: 50%;
+}
+
+.card {
+    border-style: solid;
+    border-color: #f0f0f0;
+    border-width: 2px;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 180px;
+    margin: 30px 0;
+}
+
+.input {
+    width: 280px;
+    height: 28px;
+    border: 1px solid #d6d6d6;
+    border-radius: 3px;
+    padding: 4px;
+    margin-bottom: 8px;
+}
+
+.button {
+    width: 290px;
+    height: 30px;
+    border: 1px solid #d6d6d6;
+    border-radius: 3px;
+    padding: 4px;
+    margin: 8px 0;
+    background-color: #9ad6fe;
+    color: #fff;
+}
+
+.or {
+    margin-bottom: 35px;
+}
+
+.login-facebook {
+    color: rgb(0, 0, 201);
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.forgot {
+    color: rgb(76, 76, 255);
+    text-decoration: none;
+}
+
+.cardd {
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.signup {
+    text-decoration: none;
+    color: rgb(46, 148, 182);
+}

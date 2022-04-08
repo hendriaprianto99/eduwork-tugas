@@ -1,0 +1,29 @@
+.menu {
+    text-decoration: none;
+    color: #000;
+}
+
+.slider {
+    height: 300px;
+    background: pink;
+    text-align: center;
+    line-height: 300px;
+}
+
+.line {
+    background: #000;
+    width: 100px;
+    height: 2px;
+}
+
+.content {
+    text-align: justify;
+    line-height: 30px;
+}
+
+.footer {
+    text-align: center;
+    background-color: pink;
+    margin: auto;
+}
+
