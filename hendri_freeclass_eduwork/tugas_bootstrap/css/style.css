@@ -562,3 +562,44 @@ blockquote,
 .color-white {
   color: white;
 }
+
+/* kjkh */
+/*#filter { float: left !important; }*/
+.more-filter-option:before {
+  position: relative;
+}
+.listsearch-maiwrap {
+  background: none;
+}
+@media screen and (max-width: 768px) {
+  #filter {
+    float: left;
+  }
+}
+.btn-plus {
+  margin-top: -3px;
+}
+
+.list-tag li {
+  float: left;
+  padding: 5px 10px;
+  margin: 5px 2px 0 2px;
+  background: #dbf0ff;
+  border-radius: 10px;
+  font-size: 12px;
+}
+.list-tag li i {
+  padding: 0 5px 0 0 !important;
+}
+
+.btn-register-class:hover:after {
+  width: 205px;
+  bottom: 50px;
+}
+.btn-register-class:hover:before {
+  bottom: 44px;
+}
+.btn-register-class {
+  background: #ec613a;
+  cursor: pointer;
+}
