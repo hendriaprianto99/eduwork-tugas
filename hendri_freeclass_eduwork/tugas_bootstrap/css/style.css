@@ -1,3 +1,564 @@
-img.logo-eduwork {
-    width: 500px;
+.loading {
+  padding: 10px;
+}
+.header-inner {
+  /* max-width: 1200px ;*/
+  margin: 0 auto;
+}
+.notification.error {
+  background: #ff000c;
+  color: #fff;
+}
+.notification.error li {
+  list-style-type: none;
+}
+.invalid {
+  color: red;
+}
+.is-invalid {
+  border: red 1px solid !important;
+}
+.notification {
+  margin-bottom: 20px;
+}
+.btn-action {
+  color: #fff;
+  background: #5ecfb1;
+  padding: 10px;
+  border-radius: 5px;
+}
+.btn-danger {
+  color: #fff;
+  background: #dc3545;
+  padding: 10px;
+  border-radius: 5px;
+}
+.badge-success {
+  color: #fff;
+  background: #5ecfb1;
+  padding: 5px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.badge-danger {
+  color: #fff;
+  background: #dc3545;
+  padding: 5px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.wa {
+  position: fixed;
+  bottom: 25px;
+  right: 10px;
+  z-index: 999;
+  background: #0ebe43;
+  padding: 10px 20px;
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 20px;
+  border-radius: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-search-select-item {
+    width: 100px;
+  }
+
+  .images-collage-title {
+    top: -60px !important;
+    width: 100%;
+    right: 0;
+  }
+
+  .sw-btn.swiper-button-prev {
+    left: 20px;
+  }
+
+  .sw-btn.swiper-button-next {
+    right: 20px;
+  }
+
+  .sw-btn {
+    top: 70%;
+  }
+
+  .dashboard-list-box .btn-action {
+    display: block;
+  }
+
+  .wa {
+    width: 100%;
+    right: 0;
+    margin: 0;
+    border-radius: 0;
+    font-size: 15px;
+    bottom: -12px;
+  }
+}
+
+.tooltip {
+  display: inline;
+  position: relative;
+}
+
+.tooltip:hover:after {
+  background: #333;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  bottom: 26px;
+  color: #fff;
+  content: attr(title);
+  left: 20%;
+  padding: 5px 15px;
+  position: absolute;
+  z-index: 98;
+}
+
+.tooltip:hover:before {
+  border: solid;
+  border-color: #333 transparent;
+  border-width: 6px 6px 0 6px;
+  bottom: 20px;
+  content: "";
+  left: 50%;
+  position: absolute;
+  z-index: 99;
+}
+/* asdksadkasd */
+.sub-title {
+  font-size: 26px !important;
+}
+.cs-countdown-item {
+  padding: 15px 30px;
+}
+
+@media screen and (min-width: 768px), screen and (min-height: 768px) {
+  .hero-section {
+    padding-top: 80px !important;
+  }
+  .daftar-button {
+    margin: 0px 0 100px 0;
+  }
+  /*.slider-container .hero-section-wrap {
+            padding-top:50px !important;
+        }*/
+}
+
+@media screen and (max-width: 768px) {
+  /*.hero-section {padding-bottom: 100px !important; }*/
+  .slider-container-wrap {
+    padding: 250px 0 155px;
+    height: unset !important;
+  }
+
+  .imagebg {
+    display: none;
+  }
+
+  h3.subdesc {
+    margin-bottom: 10px;
+  }
+  .hero-section-wrap {
+    padding-top: 100px !important;
+  }
+
+  h2.sub-title {
+    font-size: 22px !important;
+  }
+  #form-pendaftaran {
+    margin-top: 10px;
+  }
+  .sw-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .slider-container-wrap .sw-btn {
+    margin-top: 0;
+    top: 50% !important ;
+  }
+  .gray-section {
+    padding-top: 0 !important;
+  }
+}
+
+.title_1 {
+  text-align: center;
+}
+.title_2 {
+  font-size: 40px !important;
+  text-align: center;
+}
+
+.daftar-button {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.title2_1 {
+}
+
+@media only screen and (max-width: 540px) {
+  .single-facts .inline-facts-wrap,
+  .team-box,
+  .cs-countdown-item,
+  .list-single-header-contacts li,
+  .list-single-facts .inline-facts-wrap,
+  .listing-features li,
+  .listing-item,
+  .statistic-item-wrap,
+  #progressbar li {
+    width: 50%;
+  }
+
+  .title_1 {
+    font-size: 28px !important;
+    padding-bottom: 10px !important ;
+    text-align: center;
+  }
+  .title_2 {
+    font-size: 20px !important;
+    text-align: center;
+  }
+  .daftar-button {
+    text-align: center;
+    margin-top: 0px !important;
+  }
+
+  .title2_1 {
+    font-size: 28px !important;
+    padding-bottom: 0px !important;
+  }
+}
+
+.daftar {
+  color: #fff;
+  padding: 10px 15px;
+  background: #4db7fe;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.daftar-sekarang {
+  cursor: pointer;
+}
+.phone {
+  border: 1px solid #d6d6d6;
+  background: #f9f9f9;
+  width: 100%;
+  padding: 15px 20px 15px 20px;
+  border-radius: 6px;
+  color: #666;
+  font-size: 13px;
+  -webkit-appearance: none;
+}
+
+/*@media  only screen and (max-width: 1324px) {}*/
+.slider-container .slider-item {
+  display: none;
+}
+.slider-container {
+  background: #0092ff;
+}
+
+.slider-container .hero-section-wrap {
+  padding-top: 200px;
+}
+/* alksjdhkas */
+#tahapan h3 {
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: -15px;
+}
+#tahapan p,
+#tahapan i {
+  color: #fff !important;
+}
+#tahapan .time-line-icon {
+  font-size: 50px;
+  color: #fff;
+  background: none;
+  border: solid 1px #fff;
+  border-radius: 50%;
+}
+#tahapan .shapes-bg-big:before {
+  background-image: none;
+}
+#tahapan .features-box {
+  margin: 0 0 50px 0;
+}
+#tahapan .section-subtitle {
+  opacity: 0;
+}
+#faq .section-subtitle {
+  opacity: 0;
+}
+
+section#tahapan {
+  padding-bottom: 300px;
+}
+.women {
+  position: absolute;
+  z-index: -1;
+  margin-top: -150px;
+}
+
+@media only screen and (max-width: 1000px) {
+  section#tahapan {
+    padding-bottom: 00px;
+  }
+  .women {
+    width: 100%;
+    position: unset;
+    margin-top: unset;
+  }
+  #tahapan .features-box {
+    margin: 0 !important;
+  }
+}
+
+/* asldjk */
+@charset "utf-8";
+/*--
+	Color styles
+--*/
+.info-button:hover,
+.footer-social li a,
+.lost_password a:hover,
+.nav-holder nav li a.act-link,
+.nav-holder nav li a:hover,
+.testi-text:before,
+.testi-text:after,
+#footer-twiit .timePosted a:before,
+.map-popup-location-phone i,
+.map-popup-location-info i,
+.dark-header .nav-holder nav li ul a:hover,
+.main-register h3 span strong,
+.main-register label i,
+.listsearch-header h3 span,
+.listing-view-layout li a.active,
+.listsearch-input-text label i,
+.distance-title i,
+.listsearch-input-item i,
+.filter-tags input:checked:after,
+.more-filter-option:hover,
+.distance-title span,
+.selectbox li.selected,
+.mapzoom-in:hover,
+.mapzoom-out:hover,
+.footer-widget .widget-posts-date,
+.listsearch-input-text a.loc-act,
+.list-single-header-contacts li i,
+.viewed-counter i,
+.list-single-header-column .custom-scroll-link i,
+.list-single-header-cat span i,
+.scroll-nav-wrapper .scroll-nav li a.act-scrlink,
+.listing-features li i,
+.list-author-widget-contacts li span i,
+.list-author-widget-contacts li a:hover,
+.current-status i,
+.scroll-nav-wrapper .save-btn i,
+.list-single-contacts li i,
+.list-post-counter.single-list-post-counter i,
+.reviews-comments-item-date i,
+.list-single-main-item-title span,
+.custom-form label i,
+.custom-form .quantity span i,
+.box-widget.widget-posts .widget-posts-date i,
+.box-widget.widget-posts .widget-posts-descr a:hover,
+.team-social li a,
+.team-info h3 a:hover,
+.section-title h2 a,
+section.color-bg .header-sec-link a:hover,
+.user-profile-menu li a.user-profile-act,
+.user-profile-menu li a:hover,
+.log-out-btn,
+.pass-input-wrap span,
+.header-user-name:before,
+.header-user-menu ul li a:hover,
+.reply-mail a,
+.dashboard-message-text h4 span,
+.profile-edit-page-header .breadcrumbs span,
+.profile-edit-page-header .breadcrumbs a:hover,
+.reviews-comments-item-link,
+.fuzone:hover .fu-text i,
+.radio input[type="radio"]:checked + span:before,
+.booking-details a,
+.booking-details span.booking-text,
+.dashboard-listing-table-address i,
+.post-opt li i,
+.list-single-main-item-title h3 a:hover,
+.post-opt li a:hover,
+.post-link i,
+.post-link:hover,
+.tl-text i,
+.tl-text h3,
+.features-box .time-line-icon i,
+.features-box h3,
+.images-collage-title span,
+.process-item .time-line-icon i,
+.card-post-content h3 a:hover,
+.card-listing .list-post-counter i,
+.section-subtitle,
+.process-item:hover .process-count,
+.footer-contacts li i,
+.main-search-input-item.location a,
+.card-listing .geodir-category-location i,
+.show-reg-form:hover,
+.show-search-button i,
+.menusb li a i,
+.menusb a.back:before,
+.menusb a.act-link,
+.sp-cont,
+.list-single-tags a:hover,
+.card-listing .geodir-category-content h3 a:hover,
+#footer-twiit a:hover,
+.subscribe-message.error a,
+.share-holder.hid-share .share-container .share-icon,
+.footer-contacts li a:hover,
+.listing-title a:hover,
+#contact-form #message p strong,
+.claim-widget-link a,
+.dashboard-list-box.activities .dashboard-message-text i,
+.flatWeatherPlugin ul.wiForecasts li.wi,
+.chat-widget-button i,
+.chat-widget_input button,
+.scrollContorl i,
+#progressbar li span,
+.log-massage a,
+.filter-tags a {
+  color: #4db7fe;
+}
+.navslide-wrap,
+.slide-progress,
+nav li a.act-link:before,
+.hs-nav .navslide-wrap.next-slide-wrap a,
+.folio-counter,
+.add-list,
+.section-separator:before,
+.listing-carousel-wrap .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.card-btn:hover,
+.footer-widget #subscribe-button,
+.custom-form .log-submit-btn,
+.add-list,
+.parallax-section .section-separator:before,
+.sw-btn,
+.color-bg,
+.mapzoom-in,
+.mapzoom-out,
+.infoBox-close,
+.close-reg,
+.header-search-button,
+.listing-view-layout li a,
+.listsearch-input-item .selectbox,
+.rangeslider__fill,
+.fs-map-btn,
+.more-filter-option span,
+.back-to-filters,
+.back-to-filters span,
+.pin,
+.load-more-button,
+.footer-menu li:before,
+.pagination a.current-page,
+.pagination a:hover,
+.section-title .breadcrumbs a:before,
+.showshare,
+.scroll-nav-wrapper .scroll-nav li a:before,
+.list-single-main-wrapper .breadcrumbs,
+.list-widget-social li a,
+.btn.transparent-btn:hover,
+.btn.flat-btn,
+.accordion a.toggle.act-accordion,
+.custom-form .quantity input.qty,
+.widget-posts-link span,
+.box-item a.gal-link,
+.custom-form .selectbox,
+.photoUpload,
+.user-profile-menu li a span,
+.tabs-menu li.current a,
+.tabs-menu li a:hover,
+.header-social li a:hover,
+.main-search-button,
+.selectbox li:hover,
+.color-overlay,
+.trs-btn,
+.testi-counter,
+.to-top,
+.header-sec-link a,
+.card-btn,
+.profile-edit-page-header .breadcrumbs a:before,
+.dashboard-listing-table-opt li a.del-btn,
+.search-widget .search-submit,
+.box-widget-item .list-single-tags a,
+.reviews-comments-item-text .new-dashboard-item:hover,
+.step-item,
+.video-box-btn,
+.slick-dots li.slick-active button,
+.time-line-container:before,
+.error-wrap form .search-submit,
+.testimonials-carousel .slick-current .testimonilas-text,
+.cs-social li a,
+.cs-countdown-item:before,
+.listing-counter,
+.price-head,
+.price-link,
+.sp-cont:hover,
+.cluster div,
+.lg-actions .lg-next,
+.lg-actions .lg-prev,
+.log-out-btn:hover,
+.map-popup-category,
+.mapnavigation a:hover,
+.listsearch-input-item .nice-select,
+.listsearch-input-item .nice-select .list li.selected.focus,
+.listsearch-input-item .nice-select .list li:hover,
+.listsearch-input-item .nice-select .list li.selected,
+.custom-form .nice-select .list li:hover,
+.custom-form .nice-select .list li.selected,
+.custom-form .nice-select,
+.header-search-select-item .nice-select .list li:hover,
+.header-search-select-item .nice-select .list li.selected,
+.main-search-input-item .nice-select .list li:hover,
+.main-search-input-item .nice-select .list li.selected,
+.pac-item:hover {
+  background: #4db7fe;
+}
+.listing-view-layout li a.active,
+.rangeslider__handle,
+.list-author-widget-text .btn,
+.btn.transparent-btn,
+.log-out-btn,
+blockquote,
+.cluster div:before,
+.header-search-select-item .nice-select:after,
+.main-search-input-item .nice-select:after {
+  border-color: #4db7fe;
+}
+.listing-rating i {
+  color: #facc39;
+}
+.gradient-bg,
+.listing-geodir-category,
+.list-single-header-cat a,
+.box-widget-item .list-single-tags a:hover,
+.nav-holder nav li a:before {
+  background-color: #3eaafd;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3eaafd), to(#49ceff));
+  background: -webkit-linear-gradient(top, #3eaafd, #49ceff);
+  background: -moz-linear-gradient(top, #3eaafd, #49ceff);
+  background: -ms-linear-gradient(top, #3eaafd, #49ceff);
+  background: -o-linear-gradient(top, #3eaafd, #49ceff);
+}
+
+.bg-yellow-dark {
+  background-color: #ffd200;
+}
+
+.color-white {
+  color: white;
 }
