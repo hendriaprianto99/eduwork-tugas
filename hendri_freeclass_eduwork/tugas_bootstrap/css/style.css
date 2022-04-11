@@ -2,7 +2,6 @@
   padding: 10px;
 }
 .header-inner {
-  /* max-width: 1200px ;*/
   margin: 0 auto;
 }
 .notification.error {
@@ -125,7 +124,7 @@
   position: absolute;
   z-index: 99;
 }
-/* asdksadkasd */
+
 .sub-title {
   font-size: 26px !important;
 }
@@ -140,13 +139,9 @@
   .daftar-button {
     margin: 0px 0 100px 0;
   }
-  /*.slider-container .hero-section-wrap {
-            padding-top:50px !important;
-        }*/
 }
 
 @media screen and (max-width: 768px) {
-  /*.hero-section {padding-bottom: 100px !important; }*/
   .slider-container-wrap {
     padding: 250px 0 155px;
     height: unset !important;
@@ -258,7 +253,6 @@
   -webkit-appearance: none;
 }
 
-/*@media  only screen and (max-width: 1324px) {}*/
 .slider-container .slider-item {
   display: none;
 }
@@ -269,7 +263,6 @@
 .slider-container .hero-section-wrap {
   padding-top: 200px;
 }
-/* alksjdhkas */
 #tahapan h3 {
   color: #fff;
   font-size: 30px;
@@ -322,11 +315,7 @@ section#tahapan {
   }
 }
 
-/* asldjk */
 @charset "utf-8";
-/*--
-	Color styles
---*/
 .info-button:hover,
 .footer-social li a,
 .lost_password a:hover,
@@ -563,8 +552,6 @@ blockquote,
   color: white;
 }
 
-/* kjkh */
-/*#filter { float: left !important; }*/
 .more-filter-option:before {
   position: relative;
 }
