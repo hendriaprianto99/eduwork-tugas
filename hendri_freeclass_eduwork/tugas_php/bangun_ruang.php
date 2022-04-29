@@ -70,7 +70,7 @@
                 </div>
             </td>
 
-            <!-- Luas lingkaran -->
+            <!-- volume prisma -->
             <td>
                 <div class="volumePrisma">
                     <h3>Menghitung Volume Prisma</h3>
@@ -85,8 +85,8 @@
                 </div>
             </td>
 
-             <!-- Luas Trapesium -->
-             <td>
+            <!-- volume kerucut -->
+            <td>
                 <div class="volumeKerucut">
                     <h3>Menghitung Volume Kerucut</h3>
                     <form action="" method="get">
@@ -99,7 +99,7 @@
                 </div>
             </td>
 
-            <!-- Keliling Trapesium -->
+            <!-- volume limas -->
             <td>
                 <div class="volumeLimas">
                     <h3>Menghitung Volume Limas</h3>
