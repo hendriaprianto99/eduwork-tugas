@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menghitung Bangun Ruang | Tugas PHP</title>
+    <title>Menghitung Bangun Datar | Tugas Function</title>
     <style>
         body {
             margin: 50px;
@@ -35,7 +35,7 @@
         <!-- head -->
         <tr>
             <th colspan=5>
-                <h1>Menghitung Bangun Ruang | Function</h1>
+                <h1>Menghitung Bangun Datar | Tugas Function</h1>
                 <p>Mohon masukan data hanya dalam bentuk angka</p>
             </th>
         </tr>
@@ -127,8 +127,8 @@
                         
                         // Hitung Luas Trapesium
                         function luas_trapesium($a, $b, $t) {
-                            $luarTrapesium = 0.5 * ( $a + $b ) * $t;
-                            return $luarTrapesium;
+                            $luasTrapesium = 0.5 * ( $a + $b ) * $t;
+                            return $luasTrapesium;
                         }
 
                         // hasil

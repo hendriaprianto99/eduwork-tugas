@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menghitung Bangun Ruang | Tugas PHP</title>
+    <title>Menghitung Bangun Ruang | Tugas Function</title>
     <style>
         body {
             margin: 50px;
@@ -22,7 +22,7 @@
         }
 
         tr:nth-child(odd) {
-            background-color: yellow;
+            background-color: #D6EEEE;
         }
 
         tr:nth-child(even) {
@@ -35,7 +35,7 @@
         <!-- head -->
         <tr>
             <th colspan=5>
-                <h1>Menghitung Bangun Ruang | Tugas PHP</h1>
+                <h1>Menghitung Bangun Ruang | Tugas Function</h1>
                 <p>Mohon masukan data hanya dalam bentuk angka</p>
             </th>
         </tr>
@@ -122,9 +122,13 @@
                         // input
                         $r = $_GET['r'];
                         
-                        $volumeKubus = $r * $r * $r;
+                        function volume_kubus($r) {
+                            $volumeKubus = $r * $r * $r;
+                            return $volumeKubus;
+                        }
+
                         // hasil
-                        echo "<h3>Hasil Hitung Volume Kubus: " . $volumeKubus . " CM<sup>3</sup></h3>";
+                        echo "<h3>Hasil Hitung Volume Kubus: " . volume_kubus($r) . " CM<sup>3</sup></h3>";
                     }
 
 
@@ -135,10 +139,13 @@
                         $l = $_GET['l'];
                         $t = $_GET['t'];
                         
-                        $volumeBalok = $p * $l * $t;
+                        function volume_balok($p, $l, $t) {
+                            $volumeBalok = $p * $l * $t;
+                            return $volumeBalok;
+                        }
 
                         // hasil
-                        echo "<h3>Hasil Hitung Volume Balok: " . $volumeBalok . " CM<sup>3</sup></h3>";
+                        echo "<h3>Hasil Hitung Volume Balok: " . volume_balok($p, $l, $t) . " CM<sup>3</sup></h3>";
                     }
 
 
@@ -149,10 +156,13 @@
                         $l = $_GET['l'];
                         $t = $_GET['t'];
                         
-                        $volumePrisma = 0.5 * $p * $l * $t;
+                        function volume_prisma($p, $l, $t) {
+                            $volumePrisma = 0.5 * $p * $l * $t;
+                            return $volumePrisma;
+                        }
 
                         // hasil
-                        echo "<h3>Hasil Hitung Volume Prisma: " . $volumePrisma . " CM<sup>3</sup></h3>";
+                        echo "<h3>Hasil Hitung Volume Prisma: " . volume_prisma($p, $l, $t) . " CM<sup>3</sup></h3>";
                     }
 
 
@@ -163,10 +173,13 @@
                         $t = $_GET['t'];
                         $phi = 3.14;
                         
-                        $volumeKerucut = 1/3 * $phi * $r *$r * $t;
+                        function volume_kerucut($r, $t, $phi) {
+                            $volumeKerucut = 1/3 * $phi * $r *$r * $t;
+                            return $volumeKerucut;
+                        }
 
                         // hasil
-                        echo "<h3>Hasil Hitung Volume Kerucut: " . $volumeKerucut . " CM<sup>3</sup></h3>";
+                        echo "<h3>Hasil Hitung Volume Kerucut: " . volume_kerucut($r, $t, $phi) . " CM<sup>3</sup></h3>";
                     }
 
                     // Action form volume limas
@@ -175,10 +188,13 @@
                         $luasAlas = $_GET['luasAlas'];
                         $t = $_GET['t'];
 
-                        $volumeLimas = 1/3 * $luasAlas * $t;
+                        function volume_limas($luasAlas, $t) {
+                            $volumeLimas = 1/3 * $luasAlas * $t;
+                            return $volumeLimas;
+                        }
 
                         // hasil
-                        echo "<h3>Hasil Hitung Volume Limas: " . $volumeLimas . " CM<sup>3</sup></h3>";
+                        echo "<h3>Hasil Hitung Volume Limas: " . volume_limas($luasAlas, $t) . " CM<sup>3</sup></h3>";
                     }
                 ?>
         </tr>
