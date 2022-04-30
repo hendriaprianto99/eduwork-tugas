@@ -12,12 +12,20 @@
     </style>
   </head>
   <body>
-    <h1>Macam-macam Function di Javascript</h1>
-    <div class="declaration">
-      <p>Ini function declaration <a href="">Klik untuk mengubah tulisan</a></p>
-    </div>
-    <div class="expression">
-      <p>Ini function expression <a href="">Klik untuk mengubah tulisan</a></p>
-    </div>
+    <h1>Function di Javascript + Parameter</h1>
+    Klik <a href="" id="tambah" onclick="tambah()">disini</a> untuk menjalankan function pertambahan</p>
+
+    <script>
+      // pertambahan
+      function tambah(a, b) {
+        return a + b;
+      }
+      alert("Fungsi pertambahan");
+      var a = parseInt(prompt("Masukan Nilai ke-1:"));
+      var b = parseInt(prompt("Masukan Nilai ke-2:"));
+
+      var hasil = tambah(a, b);
+      alert("Hasilnya adalah " + hasil);
+    </script>
   </body>
 </html>
