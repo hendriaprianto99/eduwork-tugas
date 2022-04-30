@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Looping</title>
+    <style>
+      body {
+        padding: 2%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tugas Looping</h1>
+    <br />
+
+    <script>
+      // looping 1
+      document.write("<h3>Looping 1</h3>");
+      for (var i = 1; i <= 5; i++) {
+        for (var j = 1; j <= i; j++) {
+          document.write(j + " ");
+        }
+        document.write("<br />");
+      }
+      document.write("<br />");
+
+      // looping 2
+      document.write("<h3>Looping 2</h3>");
+      for (var i = 5; i >= 1; i--) {
+        for (var j = 1; j <= i; j++) {
+          document.write(j + " ");
+        }
+        document.write("<br />");
+      }
+      document.write("<br />");
+
+      // looping 3
+      document.write("<h3>Looping 3</h3>");
+      for (var i = 1; i <= 5; i++) {
+        for (var j = 1; j < i; j++) {
+          document.write(j + " ");
+        }
+        document.write("<br />");
+      }
+      for (var i = 5; i >= 1; i--) {
+        for (var j = 1; j <= i; j++) {
+          document.write(j + " ");
+        }
+        document.write("<br />");
+      }
+      document.write("<br />");
+
+      // looping 4
+      document.write("<h3>Looping 4</h3>");
+      for (var i = 10; i >= 1; i--) {
+        if (i % 2 == 0) {
+          for (var j = 1; j <= 10; j++) {
+            if (j % 2 == 0) {
+              document.write("#" + " ");
+            } else {
+              document.write("*" + " ");
+            }
+          }
+        }
+
+        if (i % 2 == 1) {
+          for (var j = 1; j <= 10; j++) {
+            if (j % 2 == 0) {
+              document.write("*" + " ");
+            } else {
+              document.write("#" + " ");
+            }
+          }
+        }
+        document.write("<br />");
+      }
+    </script>
+  </body>
+</html>
