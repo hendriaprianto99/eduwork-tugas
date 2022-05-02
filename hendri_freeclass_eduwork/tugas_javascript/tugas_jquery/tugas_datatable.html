@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas JQuery</title>
+
+    <!-- mycss -->
+    <style>
+      body {
+        padding: 3%;
+      }
+
+      table {
+        text-align: center;
+      }
+    </style>
+
+    <!-- connect jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- connect datatables -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css" />
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+  </head>
+  <body>
+    <table id="table-1" class="display">
+      <thead>
+        <tr>
+          <th>NPM</th>
+          <th>Nama Mhs</th>
+          <th>TTL</th>
+          <th>Matkul</th>
+          <th>Kode Matkul</th>
+          <th>SKS</th>
+          <th>Nilai</th>
+          <th>Bobot</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2013191012</td>
+          <td>Ucup</td>
+          <td>Bandung, 12 April 1999</td>
+          <td>Kalkulus</td>
+          <td>101</td>
+          <td>4</td>
+          <td>91</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>2013191013</td>
+          <td>Ina</td>
+          <td>Bandung, 13 April 1999</td>
+          <td>Basis data</td>
+          <td>101</td>
+          <td>4</td>
+          <td>81</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>2013191014</td>
+          <td>Ica</td>
+          <td>Bandung, 14 April 1999</td>
+          <td>Basis data</td>
+          <td>102</td>
+          <td>3</td>
+          <td>71</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <td>2013191016</td>
+          <td>Ika</td>
+          <td>Bandung, 16 April 1999</td>
+          <td>Sistem Operasi</td>
+          <td>103</td>
+          <td>2</td>
+          <td>81</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>2013191015</td>
+          <td>Uvuv Osas</td>
+          <td>Bandung, 15 April 1999</td>
+          <td>Kalkulus</td>
+          <td>101</td>
+          <td>4</td>
+          <td>991</td>
+          <td>A</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#table-1").DataTable();
+      });
+    </script>
+  </body>
+</html>
