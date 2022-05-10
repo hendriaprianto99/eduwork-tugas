@@ -17,10 +17,14 @@
     require_once("connect.php");
 
     // query data
-    $dataBuku = mysqli_query($db, "SELECT * FROM buku");
-    ?>
+    $dataBuku = mysqli_query($db, "SELECT buku.*, penerbit.nama_penerbit, pengarang.nama_pengarang, katalog.nama  FROM buku
+                                  JOIN penerbit ON penerbit.id_penerbit = buku.id_penerbit
+                                  JOIN pengarang ON pengarang.id_pengarang = buku.id_pengarang
+                                  JOIN katalog ON katalog.id_katalog = buku.id_katalog
+                                  ORDER BY judul ASC"); ?>
 
-    <!-- navbar -->
+    <!-- navigasi -->
+    <!-- main nav -->
     <div class="container">
       <div class="row my-3">
         <div class="col-sm-12 navbar-center">
@@ -42,16 +46,22 @@
           </nav>
         </div>
       </div>
+      <!-- tambah buku -->
+      <div class="row mb-3">
+        <div class="col-sm-10 offset-sm-1 text-center">
+          <a href="add.php" class="btn btn-primary">Tambahkan Buku Baru</a>
+        </div>
+      </div>
     </div>
 
     <!-- table -->
     <div class="container">
       <div class="row">
         <div class="col-sm-10 offset-sm-1">
-          <table class="table text-center table-hover table-striped>
+          <table class="table text-center table-hover table-striped">
             <!-- table head -->
             <thead>
-              <tr>
+              <tr class="table-primary">
                 <th>ISBN</th>
                 <th>Judul</th>
                 <th>Tahun</th>
@@ -69,14 +79,14 @@
               <?php
               foreach($dataBuku as $buku) {
                 echo "<tr>
-                        <td>".$buku['isbn']."</td>
-                        <td>".$buku['judul']."</td>
-                        <td>".$buku['tahun']."</td>
-                        <td>".$buku['id_penerbit']."</td>
-                        <td>".$buku['id_pengarang']."</td>
-                        <td>".$buku['id_katalog']."</td>
-                        <td>".$buku['qty_stok']."</td>
-                        <td>".$buku['harga_pinjam']."</td>
+                        <td>" . $buku['isbn'] . "</td>
+                        <td>" . $buku['judul'] . "</td>
+                        <td>" . $buku['tahun'] . "</td>
+                        <td>" . $buku['nama_penerbit'] . "</td>
+                        <td>" . $buku['nama_pengarang'] . "</td>
+                        <td>" . $buku['nama'] . "</td>
+                        <td>" . $buku['qty_stok'] . "</td>
+                        <td>" . $buku['harga_pinjam'] . "</td>
                       </tr>";
               } ?>
             </tbody>
